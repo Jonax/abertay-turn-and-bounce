@@ -1,0 +1,51 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//								 "Turn & Bounce" Prototype								//
+//					   Written 2007 by Jon Wills (jonaxc@gmail.com)						//
+//				  Written for a Win32 environment using the Direct3D API.				//
+//																						//
+//				   Written at the University of Abertay Dundee, Scotland				//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//	GRAPHICAL USER INTERFACE MODULE														//
+//	The primary class for the GUI system.  The module handles the rendering of dynamic	//
+//	text onto the screen.																//
+//////////////////////////////////////////////////////////////////////////////////////////
+#ifndef _GUI_H_
+#define _GUI_H_
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//	LIBRARY INCLUDES
+//	The libraries & namespaces required for the module.  
+//////////////////////////////////////////////////////////////////////////////////////////
+#include <d3dx9.h>		// Extended library for DirectX 9.0c functionality.  
+#include <stdio.h>		// Standard I/O library.  
+#include "Defines.h"	// Library for the project's definitions & macros.  
+#include "D3DSetup.h"	// Direct3D settings class.  
+#include "TextBox.h"	// Text Box datatype class.
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//	CLASS HEADER
+//	Declaration of all required class methods and data.  The code for the methods is 
+//	detailed in the module's source file.  
+//////////////////////////////////////////////////////////////////////////////////////////
+class GUISystem
+{
+	public:
+		GUISystem();								// Class constructor.  
+
+		bool CreateFont();							// Creates the font device.  
+
+		void RenderScore(int level, int score);		// Renders the score onto the screen.
+
+	//////////////////////////////////////////////////////////////////////////////////////
+	//	CLASS OBJECTS
+	//////////////////////////////////////////////////////////////////////////////////////
+	private:
+		ID3DXFont* Font;	// Device for the GUI's font.  
+		
+		TextBox* Level;		// Text box to store the current level.  
+		TextBox* Score;		// Text box to store the progress to the next level.  
+};
+
+#endif
