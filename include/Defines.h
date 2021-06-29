@@ -31,8 +31,8 @@
 //	Settings specific to the Win32 code and the main window.  
 //////////////////////////////////////////////////////////////////////////////////////////
 // Settings to establish a 1024 x 768 window.  
-#define SCREEN_WIDTH		1024
-#define SCREEN_HEIGHT		768
+#define SCREEN_WIDTH		1920
+#define SCREEN_HEIGHT		1080
 
 // Handles whether the window is windowed or fullscreen.  It is currently set to 
 // fullscreen but it is possible to comment the FULLSCREEN flag below.  

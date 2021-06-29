@@ -39,7 +39,7 @@ void D3DRenderer::Render()
 {
 	MSG msg;				// Holds Win32 event messages
 
-	Timer.SetFrameRate(50);	// Sets the frame rate to 50 frames per second.  
+	Timer.SetFrameRate(120);	// Sets the frame rate to 120 frames per second.  
 
 	while (true)			// Until however long the game runs for...
 	{

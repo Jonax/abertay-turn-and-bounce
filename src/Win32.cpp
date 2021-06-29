@@ -32,7 +32,7 @@ HWND Wind32::InitialiseWindow(int w, int h, HINSTANCE instance, int nCmdShow)
 									CLASS_NAME, 
 									WINDOW_NAME, 
 									WS_OVERLAPPEDWINDOW, 
-									0, 0,			// Starting x-y position of the window.  
+									800, 90,			// Starting x-y position of the window.  
 									w, h,			// Size of the window.  
 									NULL,			// No parent window.
 									NULL,			// Not using menus
