@@ -27,12 +27,6 @@
 #include "GUI.h"		// GUI management class.  
 #include "Timer.h"		// Timer class.  
 
-// The necessary libraries for the application.  
-#pragma comment (lib, "d3d9.lib")		// Standard DirectX 9.0c library.  
-#pragma comment (lib, "d3dx9.lib")		// Extended DirectX 9.0c library.  
-#pragma comment (lib, "dinput8.lib")	// DirectInput 8 library.  
-#pragma comment (lib, "dxguid.lib")		// DirectX interface definitions library.  
-
 //////////////////////////////////////////////////////////////////////////////////////////
 //	CLASS HEADER
 //	Declaration of all required class methods and data.  The code for the methods is 
