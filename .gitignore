@@ -29,5 +29,7 @@
 
 .vs/
 packages/
+bin/
+obj/
 
 *.vcxproj.*

@@ -45,6 +45,7 @@
     <OutDir>$(ProjectDir)\bin\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)\obj\$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
@@ -100,33 +101,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ColourRGB.cpp" />
-    <ClCompile Include="D3DMesh.cpp" />
-    <ClCompile Include="D3DRenderer.cpp" />
-    <ClCompile Include="D3DSetup.cpp" />
-    <ClCompile Include="GameLogic.cpp" />
-    <ClCompile Include="GUI.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MeshBall.cpp" />
-    <ClCompile Include="MeshRing.cpp" />
-    <ClCompile Include="TextBox.cpp" />
-    <ClCompile Include="Timer.cpp" />
-    <ClCompile Include="Win32.cpp" />
+    <ClCompile Include="src\ColourRGB.cpp" />
+    <ClCompile Include="src\D3DMesh.cpp" />
+    <ClCompile Include="src\D3DRenderer.cpp" />
+    <ClCompile Include="src\D3DSetup.cpp" />
+    <ClCompile Include="src\GameLogic.cpp" />
+    <ClCompile Include="src\GUI.cpp" />
+    <ClCompile Include="src\MeshBall.cpp" />
+    <ClCompile Include="src\MeshRing.cpp" />
+    <ClCompile Include="src\TextBox.cpp" />
+    <ClCompile Include="src\Timer.cpp" />
+    <ClCompile Include="src\Win32.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ColourRGB.h" />
-    <ClInclude Include="D3DMesh.h" />
-    <ClInclude Include="D3DRenderer.h" />
-    <ClInclude Include="D3DSetup.h" />
-    <ClInclude Include="Defines.h" />
-    <ClInclude Include="GameLogic.h" />
-    <ClInclude Include="GUI.h" />
-    <ClInclude Include="MeshBall.h" />
-    <ClInclude Include="MeshRing.h" />
-    <ClInclude Include="Singleton.h" />
-    <ClInclude Include="TextBox.h" />
-    <ClInclude Include="Timer.h" />
-    <ClInclude Include="Win32.h" />
+    <ClInclude Include="include\ColourRGB.h" />
+    <ClInclude Include="include\D3DMesh.h" />
+    <ClInclude Include="include\D3DRenderer.h" />
+    <ClInclude Include="include\D3DSetup.h" />
+    <ClInclude Include="include\Defines.h" />
+    <ClInclude Include="include\GameLogic.h" />
+    <ClInclude Include="include\GUI.h" />
+    <ClInclude Include="include\MeshBall.h" />
+    <ClInclude Include="include\MeshRing.h" />
+    <ClInclude Include="include\Singleton.h" />
+    <ClInclude Include="include\TextBox.h" />
+    <ClInclude Include="include\Timer.h" />
+    <ClInclude Include="include\Win32.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Models\Ball.x">
