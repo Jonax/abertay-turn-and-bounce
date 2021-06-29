@@ -44,7 +44,7 @@ D3DMesh::~D3DMesh()
 void D3DMesh::Load(LPCTSTR Filename)
 {
 	// Loads a mesh in from an .x file.  
-	HRESULT result = D3DXLoadMeshFromX(	Filename,				// Name of the .x file.  
+	D3DXLoadMeshFromX(	Filename,				// Name of the .x file.  
 						D3DXMESH_SYSTEMMEM,		// Loads the mesh into system memory
 						this->Device,			// The application's Direct3D Device
 						NULL,					// Adjacency isn't being used.  

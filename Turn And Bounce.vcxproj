@@ -42,8 +42,8 @@
     <_ProjectFileVersion>16.0.31401.40</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(ProjectDir)\bin\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)\obj\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)\bin\$(Configuration)</OutDir>
+    <IntDir>$(ProjectDir)\obj\$(Configuration)</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
